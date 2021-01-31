@@ -1,0 +1,52 @@
+#pagetitle
+{
+    text-align: center;
+}
+
+.darksection
+{
+    background-color: #333333;
+    color: white;
+}
+.padcontainer
+{
+    padding: 20px;
+}
+
+.description
+{
+    font-size: medium;
+}
+
+.inforow
+{
+    padding-top: 20px;
+}
+
+.infoheader
+{
+    text-align: left;
+}
+
+.algpic
+{
+    margin: auto;
+}
+
+.alggroup
+{
+    padding-bottom: 50px;
+}
+.section2header
+{
+    text-align: left;
+}
+@media (min-width: 576px)
+{
+    .section2header
+    {
+        text-align: right;
+    }
+}
+/*Media queries detect width/height of viewport;
+the above rule only applies when the viewport width is at least 576 px*/

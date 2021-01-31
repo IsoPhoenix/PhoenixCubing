@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <title>PhoenixCubing F2L</title>
+    </head>
+
+    <body>
+
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Phoenix Cubing</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="f2l.html">F2L</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="oll.html">OLL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pll.html">PLL</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--Body-->
+
+        <!--Title Section-->
+        <div class="container padcontainer">
+            <img src="cube.png" class="mx-auto d-block" alt="cube" height="200">
+            <h1 id="pagetitle">F2L: First Two Layers</h1>
+        </div>
+
+
+
+        <!--Overview-->
+        <div class="container">
+            <p>The F2L stage is the second stage of the CFOP method, the first being the Cross stage. In the F2L (First Two Layers) stage, you solve four corner-edge pairs to complete the first two layers of the cube.
+            This step should be done as intuitively as possible (without algorithms), but here are some handy tricks I've picked up to solve tricky F2L cases that aren't intuitively clear!</p>
+        <hr>
+        </div>
+        <!--Algorithms-->
+        <div class="container">
+            <h2 style="text-align: center">Algorithms</h2>
+            <p style="text-align: center">Use the dropdown to toggle between different categories!</p>
+
+            <!--Dropdown-->
+            <select>
+                <option value="cornerf2l" selected>Edge in slot</option>
+                <option value="edgef2l">Corner in slot</option>
+                <option value="bothf2l">Corner+edge in top layer</option>
+                <option value="nonef2l">Corner+edge in slot</option>
+            </select>
+
+            <!--Groupings-->
+
+            <!--Edge in slot-->
+            <div id="cornerf2l" class="alggroup" style="display: block;">
+                <div class="row border">
+                    <div class="col">
+                        <img class="mx-auto d-block" src="f2licons/corner/1.png" alt="cube">
+                    </div>
+                    <div class="col my-auto">
+                        <h4>U' R' F R F' R U' R'</h4>
+                    </div>
+                </div>
+                <div class="row border">
+                    <div class="col">
+                        <img class="mx-auto d-block" src="f2licons/corner/2.png" alt="cube">
+                    </div>
+                    <div class="col my-auto">
+                        <h4>U2 R U R' F R' F' R</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!--Corner in slot-->
+            <div id="edgef2l" class="alggroup" style="display: none;">
+                <div class="row border">
+                    <div class="col">
+                        <img class="mx-auto d-block" src="f2licons/edge/1.png" alt="cube">
+                    </div>
+                    <div class="col my-auto">
+                        <h4>U' R' F R F' R U R'</h4>
+                    </div>
+                </div>
+                <div class="row border">
+                    <div class="col">
+                        <img class="mx-auto d-block" src="f2licons/edge/2.png" alt="cube">
+                    </div>
+                    <div class="col my-auto">
+                        <h4>U R U' R' F R' F' R</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!--Corner and edge in top layer-->
+            <div id="bothf2l" class="alggroup" style="display: none;">
+                <div class="row border">
+                    <div class="col">
+                        <img class="mx-auto d-block" src="f2licons/both/1.png" alt="cube">
+                    </div>
+                    <div class="col my-auto">
+                        <h4>l U L F' L' U' l'</h4>
+                    </div>
+                </div>
+                <div class="row border">
+                    <div class="col">
+                        <img class="mx-auto d-block" src="f2licons/both/2.png" alt="cube">
+                    </div>
+                    <div class="col my-auto">
+                        <h4>R U' R' U2 F' U' F</h4>
+                    </div>
+                </div>
+                <div class="row border">
+                    <div class="col">
+                        <img class="mx-auto d-block" src="f2licons/both/3.png" alt="cube">
+                    </div>
+                    <div class="col my-auto">
+                        <h4>F' L' U2 L F</h4>
+                    </div>
+                </div>
+                <div class="row border">
+                    <div class="col">
+                        <img class="mx-auto d-block" src="f2licons/both/4.png" alt="cube">
+                    </div>
+                    <div class="col my-auto">
+                        <h4>R U R' U2 R U R' U' R U R'</h4>
+                    </div>
+                </div>
+                <div class="row border">
+                    <div class="col">
+                        <img class="mx-auto d-block" src="f2licons/both/5.png" alt="cube">
+                    </div>
+                    <div class="col my-auto">
+                        <h4>F U R U' R' F' R U' R'</h4>
+                    </div>
+                </div>
+                <div class="row border">
+                    <div class="col">
+                        <img class="mx-auto d-block" src="f2licons/both/6.png" alt="cube">
+                    </div>
+                    <div class="col my-auto">
+                        <h4>R' U2 R2 U R2 U R</h4>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Corner and edge in slot-->
+            <div id="nonef2l" class="alggroup" style="display: none;">
+                <div class="row border">
+                    <div class="col">
+                        <img class="mx-auto d-block" src="f2licons/none/1.png" alt="cube">
+                    </div>
+                    <div class="col my-auto">
+                        <h4>r U' r' U2 r U r' R U R'</h4>
+                    </div>
+                </div>
+                <div class="row border">
+                    <div class="col">
+                        <img class="mx-auto d-block" src="f2licons/none/2.png" alt="cube">
+                    </div>
+                    <div class="col my-auto">
+                        <h4>R U' R' r U' r' U2 r U r'</h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!--Footer-->
+        <section class="darksection">
+        <div class="container padcontainer">
+            <div class="row">
+                <div class="col">
+                    <h4>Follow me!</h4>
+                    <hr style="background-color: white;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-auto">
+                    <h5 style="text-align: left;"><a href="https://www.instagram.com/theunsolvable/">Instagram</a></h5>
+                </div>
+                <div class="col-12 col-md-auto">
+                    <h5 style="text-align: left;"><a href="https://twitter.com/theunsolvable">Twitter</a></h5>
+                </div>
+                <div class="col-12 col-md-auto">
+                    <h5 style="text-align: left;"><a href="https://www.facebook.com/matthew.su.568">Facebook</a></h5>
+                </div>
+            </div>
+        </div>
+        </section>
+
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+        <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+        -->
+
+        <!--Dropdown functionality-->
+        <script>
+            document.querySelector('select').onchange = function() {
+
+                /*Hide all sections*/
+                document.querySelector('#cornerf2l').style.display = "none";
+                document.querySelector('#edgef2l').style.display = "none";
+                document.querySelector('#bothf2l').style.display = "none";
+                document.querySelector('#nonef2l').style.display = "none";
+
+                /*Open queried section*/
+                let section = this.value;
+                document.querySelector('#' + String(section)).style.display = "block";
+            }
+        </script>
+
+
+
+    </body>
+</html>
+<!--Bootstrap Starter Template from https://getbootstrap.com/docs/4.5/getting-started/introduction/-->
+<!--Navbar template from https://getbootstrap.com/docs/4.0/components/navbar/-->
